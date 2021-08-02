@@ -1,0 +1,26 @@
+{
+  "name": "my-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server -p 3001 --fks _id --snapshots ./server/dbs  -d 200 --routes ./server/routes.json --read-only --watch server/generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theDeepDev/my-db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theDeepDev/my-db/issues"
+  },
+  "homepage": "https://github.com/theDeepDev/my-db#readme",
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
